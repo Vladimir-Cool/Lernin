@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Black">
+    <option name="enabledOnReformat" value="true" />
+    <option name="enabledOnSave" value="true" />
+    <option name="sdkUUID" value="faae0617-2585-43bf-8e58-f9493713e2cd" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (Lernin)" project-jdk-type="Python SDK" />
+</project>
