@@ -28,7 +28,7 @@ example_2 = '[{"name": "Bumber", "value": "1 (0%)", "inline": ""},{"name": "lamu
 # json_dict = json.load(json_str)
 # print(json_dict)
 
-{"title": "Информация по профилю: {{ name }}", "description": "Ваш опыт: {{ experience}}%\nКоличество персонажей: {{ characters|length }} из {{ characters_count }}\n", "color": 10040012{% if characters %}, "fields": "[{% for char in characters %}{\"name\": \"{{ char.name }}\", \"value\": \"{{ char.level }} ({{ char.experience }}%)\"{% if char.is_inline %}, \"inline\": \"{{ char.is_inline }}\"{% endif %}},{% endfor %}]"{% endif %}}
+# {"title": "Информация по профилю: {{ name }}", "description": "Ваш опыт: {{ experience}}%\nКоличество персонажей: {{ characters|length }} из {{ characters_count }}\n", "color": 10040012{% if characters %}, "fields": "[{% for char in characters %}{\"name\": \"{{ char.name }}\", \"value\": \"{{ char.level }} ({{ char.experience }}%)\"{% if char.is_inline %}, \"inline\": \"{{ char.is_inline }}\"{% endif %}},{% endfor %}]"{% endif %}}
 
 
 print(json.loads(example_2))
