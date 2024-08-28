@@ -5,7 +5,8 @@ symbols = "!@#$%&?"
 numbers = "0123456789"
 
 def get_random_string(leanght: int = 8) -> str:
-    """ Возвращает строку из случайных символов
+    """ Возвращает строку из случайных символов,
+        обязательно содержит минимум одну букву, одну цифру и один символ.
         leanght: длина получаемой строки.
     """
 
@@ -39,12 +40,12 @@ def get_random_string(leanght: int = 8) -> str:
             return True
         return False
 
-    #
+    #------------------------
     if leanght < 3:
         raise Exception("минимальная длина строки 3 символа")
 
-
     new_str = generate_reliable_str(leanght)
+    # Опасное дело конечно while True.
     while True:
         if check_reliable(new_str):
             return new_str
@@ -53,4 +54,4 @@ def get_random_string(leanght: int = 8) -> str:
 
 
 
-print(get_random_string(4))
+print(get_random_string())
