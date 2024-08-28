@@ -41,7 +41,7 @@ def get_random_string(leanght: int = 8) -> str:
 
     #
     if leanght < 3:
-        raise Exception("минимальная длина пароля 3 символа")
+        raise Exception("минимальная длина строки 3 символа")
 
 
     new_str = generate_reliable_str(leanght)
