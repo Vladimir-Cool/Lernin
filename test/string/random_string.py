@@ -54,4 +54,4 @@ def get_random_string(leanght: int = 8) -> str:
 
 
 
-print(get_random_string())
+print(get_random_string(1))
