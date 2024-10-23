@@ -1,6 +1,3 @@
+my_list = [1, 15, 30, 60, 2, 7, 100]
 
-li = []
-
-li.append((3, "d"))
-
-print(li)
+print(sorted(my_list, reverse=True))
